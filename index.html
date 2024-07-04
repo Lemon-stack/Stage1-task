@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="imageCtn">
+        <img
+          data-testid="slackProfilePicture"
+          src="profile.jpg"
+          alt="Slack Profile Picture"
+        />
+      </div>
+
+      <div class="details">
+        <h2 data-testid="slackDisplayName">Lemon Confidence</h2>
+        <div class="info">
+          <p data-testid="currentTimeUTC">
+            Current Time (UTC): <span id="utc-time"></span>
+          </p>
+          <p data-testid="currentDay">
+            Current Day: <span id="current-day"></span>
+          </p>
+          <p data-testid="slackEmail">Slack Email: [Your Slack Email]</p>
+        </div>
+        <div class="goals">
+          <button class="dropdown-btn">
+            My Tech Goals for the Next 2 Years
+          </button>
+          <div class="dropdown-content">
+            <ul>
+              <li>Learn backend technologies like Node.js and databases.</li>
+              <li>
+                Improve my problem-solving skills by building solid products
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+        
+        </div>
+      </div>
+      
+      <div class="links">
+        <ul>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink"
+              >HNG Learn</a
+            >
+          </li>
+          <li>
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </div>
+      
+        <div class="toggle-switch">
+          <label class="switch">
+            <input type="checkbox" id="mode-toggle" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
